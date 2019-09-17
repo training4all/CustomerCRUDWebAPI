@@ -1,0 +1,163 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\charu.jain\\source\\repos\\AlintaEnergyCustomerAPIProject\\AlintaEnergyCustomerAPITests\\AlintaEnergyCustomerAPITests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\charu.jain\\source\\repos\\AlintaEnergyCustomerAPIProject\\AlintaEnergyCustomerAPITests\\AlintaEnergyCustomerAPITests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\charu.jain\\source\\repos\\AlintaEnergyCustomerAPIProject\\AlintaEnergyCustomerAPITests\\AlintaEnergyCustomerAPITests.csproj",
+        "projectName": "AlintaEnergyCustomerAPITests",
+        "projectPath": "C:\\Users\\charu.jain\\source\\repos\\AlintaEnergyCustomerAPIProject\\AlintaEnergyCustomerAPITests\\AlintaEnergyCustomerAPITests.csproj",
+        "packagesPath": "C:\\Users\\charu.jain\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\charu.jain\\source\\repos\\AlintaEnergyCustomerAPIProject\\AlintaEnergyCustomerAPITests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\charu.jain\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\charu.jain\\source\\repos\\AlintaEnergyCustomerAPIProject\\AlintaEnergyCustomerAPI\\AlintaEnergyCustomerAPI.csproj": {
+                "projectPath": "C:\\Users\\charu.jain\\source\\repos\\AlintaEnergyCustomerAPIProject\\AlintaEnergyCustomerAPI\\AlintaEnergyCustomerAPI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\charu.jain\\source\\repos\\AlintaEnergyCustomerAPIProject\\AlintaEnergyCustomerAPI\\AlintaEnergyCustomerAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\charu.jain\\source\\repos\\AlintaEnergyCustomerAPIProject\\AlintaEnergyCustomerAPI\\AlintaEnergyCustomerAPI.csproj",
+        "projectName": "AlintaEnergyCustomerAPI",
+        "projectPath": "C:\\Users\\charu.jain\\source\\repos\\AlintaEnergyCustomerAPIProject\\AlintaEnergyCustomerAPI\\AlintaEnergyCustomerAPI.csproj",
+        "packagesPath": "C:\\Users\\charu.jain\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\charu.jain\\source\\repos\\AlintaEnergyCustomerAPIProject\\AlintaEnergyCustomerAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\charu.jain\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Mvc.Api.Analyzers": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0-rc2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AlintaEnergyCustomerAPI</name>
+    </assembly>
+    <members>
+        <member name="M:AlintaEnergyCustomerAPI.Controllers.CustomersController.GetAllCustomers">
+            <summary>
+            This will return all customers
+            </summary>
+            <returns>List of all existing customers</returns>
+            <remarks>
+            Sample request (this request will get all the customers) \
+            GET /api/customers/getcustomers
+            </remarks>
+            <response code="404">no customers found</response>       
+        </member>
+        <member name="M:AlintaEnergyCustomerAPI.Controllers.CustomersController.GetCustomerById(System.Int32)">
+            <summary>
+            This will get only 1 customer based on customer id
+            </summary>
+            <param name="Id"> Id of the customer to get</param>
+            <returns>single customer with same id</returns>
+            <remarks>
+            Sample request (this request will only 1 customer with id=1) \
+            GET /api/customers/getcustomerbyid/1 
+            </remarks>
+            /// <response code="400">id is not a valid customer id</response>       
+        </member>
+        <member name="M:AlintaEnergyCustomerAPI.Controllers.CustomersController.SearchCustomersByName(System.String,System.String)">
+            <summary>
+            It will get customer by partial search on First Name or Last Name
+            </summary>
+            <param name="firstName">first name of customer</param>
+            <param name="lastName">last name of customer</param>
+            <returns>single customer which matches search creteria</returns>
+            <remarks>
+            Sample request (this request will get only 1 customer with firstName=charu and lastName=jain) \
+            GET /api/customers/searchcustomersbyname?firstName=charu&amp;lastName=jain
+            </remarks>        
+        </member>
+        <member name="M:AlintaEnergyCustomerAPI.Controllers.CustomersController.DeleteCustomer(System.Int32)">
+            <summary>
+            This will delete customer with particular Id
+            </summary>
+            <param name="Id">id of the customer to delete</param>
+            <returns>status indicating wheather a customer is deleted or not</returns>
+            <remarks>
+            Sample request (this request will delete customer with id=2) \
+            DELETE /api/customers/deletecustomer?Id=2
+            </remarks>      
+        </member>
+        <member name="M:AlintaEnergyCustomerAPI.Controllers.CustomersController.Post(AlintaEnergyCustomerAPI.Models.Customer)">
+            <summary>
+            This will create new customer
+            </summary>
+            <param name="customer">customer details to be created</param>
+            <returns>newly created customer</returns>
+            <remarks>
+            Sample request (this request will create new customer) \
+            POST /api/customers/addcustomer \
+             { \
+                   "firstName": "new", \
+                   "lastName": "customer", \
+                  "dateOfBirth": "1986-09-10T00:00:00" \
+             } \
+            </remarks>      
+        </member>
+        <member name="M:AlintaEnergyCustomerAPI.Controllers.CustomersController.Put(System.Int32,AlintaEnergyCustomerAPI.Models.Customer)">
+            <summary>
+            This will update entire customer object with given Id
+            </summary>
+            <param name="Id">Id of customer to update</param>
+            <param name="customer">customer information to update with</param>
+            <returns>updated customer</returns>
+            <remarks>
+            Sample request (this request will update customer with Id=3) \
+            PUT /api/customers/updatecustomer/3 \
+             { \
+                   "firstName": "updated", \
+                   "lastName": "customer", \
+                  "dateOfBirth": "1986-09-10T00:00:00" \
+             } \
+            </remarks>       
+        </member>
+        <member name="T:AlintaEnergyCustomerAPI.Models.Customer">
+            <summary>
+            Represents a customer in system
+            </summary>
+        </member>
+        <member name="P:AlintaEnergyCustomerAPI.Models.Customer.Id">
+            <summary>
+            unique id to differentiate customer
+            </summary>
+        </member>
+        <member name="P:AlintaEnergyCustomerAPI.Models.Customer.FirstName">
+            <summary>
+            first name of customer
+            </summary>
+        </member>
+        <member name="P:AlintaEnergyCustomerAPI.Models.Customer.LastName">
+            <summary>
+            last name of customer
+            </summary>
+        </member>
+        <member name="P:AlintaEnergyCustomerAPI.Models.Customer.DateOfBirth">
+            <summary>
+            date of birth without time of customer
+            </summary>
+        </member>
+    </members>
+</doc>
